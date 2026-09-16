@@ -14,7 +14,7 @@ PAGE_TITLE = "Mā-kun’s 28th Birthday"
 # You can keep only photo_1.jpg if you want one photo.
 PHOTO_FILES = [
     "assets/photo_1.jpg",
-    "assets/photo_2.jpg",
+    "assets/photo_2.png",
     "assets/photo_3.jpg",
 ]
 
