@@ -8,7 +8,7 @@ APP_MODE = "choose"
 # On Saturday, change it to:
 # APP_MODE = "birthday"
 
-PAGE_TITLE = "Mā-kun’s 28th Birthday"
+PAGE_TITLE = "Masaki-kun’s 28th Birthday"
 
 # Upload your photos to /assets with these exact names.
 # You can keep only photo_1.jpg if you want one photo.
@@ -30,14 +30,17 @@ BIRTHDAY_PLAN = [
 
 # Replace this with your real birthday message before Saturday.
 # Keep line breaks exactly as you like.
-BIRTHDAY_MESSAGE = """Mā-kun,
+BIRTHDAY_MESSAGE = """Masaki-kun,
 
 Happy 28th birthday.
 
-I hope today feels warm, easy and very you.
-I’m really happy I get to spend part of it with you,
-even from far away.
+Espero que disfrutes tu día especial.
+Estoy muy agradecida de conocerte y de compartir
+un nuevo cumpleaños juntos, incluos a la distancia.
+Te deseo mucho éxito en todas tus metas.
+Estaré a tu lado para apoyarte cuando lo necesites. 
 
+Te amo
 I love you.
 
 — Thiare"""
