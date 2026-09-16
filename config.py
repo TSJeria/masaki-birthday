@@ -15,7 +15,7 @@ PAGE_TITLE = "Mā-kun’s 28th Birthday"
 PHOTO_FILES = [
     "assets/photo_1.jpg",
     "assets/photo_2.png",
-    "assets/photo_3.jpg",
+    "assets/photo_3.png",
 ]
 
 # Fill this on Friday after you see Masaki's answers.
