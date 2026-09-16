@@ -244,6 +244,80 @@ st.markdown(
         -webkit-text-fill-color: #262321 !important;
     }
 
+
+    /* =========================================
+       SELECTS / MULTISELECTS — LIGHT DROPDOWNS
+       ========================================= */
+
+    /* Closed activity multiselect + time selectbox */
+    [data-testid="stMultiSelect"] [data-baseweb="select"] > div,
+    [data-testid="stSelectbox"] [data-baseweb="select"] > div {
+        background: #FFFDF9 !important;
+        border-color: #E7DED4 !important;
+    }
+
+    [data-testid="stMultiSelect"] input,
+    [data-testid="stSelectbox"] input,
+    [data-testid="stMultiSelect"] [data-baseweb="select"] *,
+    [data-testid="stSelectbox"] [data-baseweb="select"] * {
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+    }
+
+    /* White dropdown panel */
+    [data-baseweb="popover"] > div,
+    [data-baseweb="menu"],
+    [role="listbox"] {
+        background: #FFFDF9 !important;
+        color: #262321 !important;
+    }
+
+    /* Activity and time options */
+    [role="option"],
+    [role="option"] > div,
+    [role="option"] p,
+    [role="option"] span {
+        background-color: #FFFDF9 !important;
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+    }
+
+    /* Hover / selected option */
+    [role="option"]:hover,
+    [role="option"][aria-selected="true"],
+    [role="option"]:hover > div,
+    [role="option"][aria-selected="true"] > div {
+        background-color: #F2E7E8 !important;
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+    }
+
+    /* Selected activities */
+    [data-testid="stMultiSelect"] [data-baseweb="tag"] {
+        background: #F2E7E8 !important;
+        color: #262321 !important;
+    }
+
+    [data-testid="stMultiSelect"] [data-baseweb="tag"] * {
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+    }
+
+    /* Placeholder text */
+    [data-testid="stMultiSelect"] input::placeholder,
+    [data-testid="stSelectbox"] input::placeholder {
+        color: #766F69 !important;
+        -webkit-text-fill-color: #766F69 !important;
+        opacity: 1 !important;
+    }
+
+    /* Dropdown arrows/icons */
+    [data-testid="stMultiSelect"] svg,
+    [data-testid="stSelectbox"] svg {
+        fill: #262321 !important;
+        color: #262321 !important;
+    }
+
     </style>
     """,
     unsafe_allow_html=True,
