@@ -318,6 +318,30 @@ st.markdown(
         color: #262321 !important;
     }
 
+
+    /* =========================================
+       TEXT AREA — BIRTHDAY REQUEST
+       ========================================= */
+    [data-testid="stTextArea"] textarea {
+        background-color: #FFFDF9 !important;
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+        border: 1px solid #E7DED4 !important;
+        caret-color: #7A263A !important;
+    }
+
+    [data-testid="stTextArea"] textarea::placeholder {
+        color: #766F69 !important;
+        -webkit-text-fill-color: #766F69 !important;
+        opacity: 1 !important;
+    }
+
+    [data-testid="stTextArea"] div[data-baseweb="textarea"],
+    [data-testid="stTextArea"] div[data-baseweb="textarea"] > div {
+        background-color: #FFFDF9 !important;
+        border-color: #E7DED4 !important;
+    }
+
     </style>
     """,
     unsafe_allow_html=True,
