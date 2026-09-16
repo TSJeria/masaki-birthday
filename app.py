@@ -42,8 +42,8 @@ st.markdown(
 
     .stApp {
         background:
-            radial-gradient(circle at 10% 10%, rgba(122,38,58,.06), transparent 28%),
-            linear-gradient(180deg, #F9F5EF 0%, #F3ECE4 100%);
+            radial-gradient(circle at 10% 10%, rgba(122,38,58,.05), transparent 28%),
+            linear-gradient(180deg, #FCFAF7 0%, #F6F1EB 100%);
         color: var(--charcoal);
     }
 
@@ -178,11 +178,83 @@ st.markdown(
         transform: translateY(-1px);
     }
 
+    /* -------------------------------------------------
+       STREAMLIT WIDGETS — KEEP QUESTIONS + OPTIONS DARK
+       ------------------------------------------------- */
+
+    /* Main headings/questions */
+    .stApp h1,
+    .stApp h2,
+    .stApp h3,
+    .stApp h4,
+    .stApp h5,
+    .stApp h6,
+    [data-testid="stWidgetLabel"] p {
+        color: var(--charcoal) !important;
+    }
+
+    [data-testid="stWidgetLabel"] p {
+        font-weight: 700 !important;
+    }
+
+    /* Radio and checkbox option cards */
     div[data-baseweb="radio"] label,
     div[data-baseweb="checkbox"] label {
         background: rgba(255,253,249,.75);
         border-radius: 14px;
-        padding: .25rem .3rem;
+        padding: .35rem .45rem;
+    }
+
+    /* Option text: same color as the questions */
+    div[data-baseweb="radio"] label p,
+    div[data-baseweb="radio"] label span,
+    div[data-baseweb="checkbox"] label p,
+    div[data-baseweb="checkbox"] label span {
+        color: var(--charcoal) !important;
+        font-weight: 400 !important;
+    }
+
+    /* Multiselect / selectbox */
+    div[data-baseweb="select"] > div {
+        background-color: var(--paper) !important;
+        color: var(--charcoal) !important;
+        border-color: var(--line) !important;
+    }
+
+    div[data-baseweb="select"] *,
+    [data-baseweb="popover"] *,
+    [role="option"] * {
+        color: var(--charcoal) !important;
+    }
+
+    /* Selected multiselect tags */
+    [data-baseweb="tag"] {
+        background-color: #F2E7E8 !important;
+    }
+
+    [data-baseweb="tag"] * {
+        color: var(--charcoal) !important;
+    }
+
+    /* Text inputs and text areas */
+    input,
+    textarea {
+        color: var(--charcoal) !important;
+        background-color: var(--paper) !important;
+        caret-color: var(--burgundy) !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--muted) !important;
+        opacity: 1 !important;
+    }
+
+    /* Keep disabled widget text readable */
+    button:disabled,
+    button:disabled p,
+    button:disabled span {
+        color: #8A817A !important;
     }
 
     [data-testid="stHeader"] {
