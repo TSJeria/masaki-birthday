@@ -379,7 +379,7 @@ def render_choose_mode():
     init_state()
 
     st.markdown('<div class="eyebrow">Friday · Choose</div>', unsafe_allow_html=True)
-    st.title("Mā-kun’s 28th Birthday")
+    st.title("Masaki-kun’s 28th Birthday")
 
     if st.session_state.submitted:
         st.markdown(
