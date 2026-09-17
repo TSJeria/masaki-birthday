@@ -778,7 +778,7 @@ def render_choose_mode():
 # -----------------------------
 def render_birthday_mode():
     st.markdown('<div class="eyebrow">Saturday · Birthday</div>', unsafe_allow_html=True)
-    st.title("Happy Birthday, Mā-kun.")
+    st.title("Happy Birthday, Masaki-kun.")
 
     st.markdown(
         """
