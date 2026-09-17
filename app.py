@@ -343,26 +343,44 @@ st.markdown(
     }
 
     /* =========================================
-       START TIME — CLOSED SELECTBOX
-       Keep the selected time readable after choosing it
+       START TIME — FORCE LIGHT CLOSED SELECTBOX
+       Streamlit/BaseWeb may inherit the browser dark colour scheme,
+       so force the whole closed control (not only its inner text).
        ========================================= */
-    [data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+    [data-testid="stSelectbox"] {
+        color-scheme: light !important;
+    }
+
+    [data-testid="stSelectbox"] [data-baseweb="select"],
+    [data-testid="stSelectbox"] [data-baseweb="select"] > div,
+    [data-testid="stSelectbox"] [data-baseweb="select"] > div:first-child {
+        background: #FFFDF9 !important;
         background-color: #FFFDF9 !important;
         color: #262321 !important;
         -webkit-text-fill-color: #262321 !important;
         border-color: #E7DED4 !important;
+        color-scheme: light !important;
     }
 
-    [data-testid="stSelectbox"] div[data-baseweb="select"] > div * {
+    /* The visible selected value / placeholder */
+    [data-testid="stSelectbox"] [data-baseweb="select"] input,
+    [data-testid="stSelectbox"] [data-baseweb="select"] input[aria-autocomplete="list"],
+    [data-testid="stSelectbox"] [data-baseweb="select"] span,
+    [data-testid="stSelectbox"] [data-baseweb="select"] p {
+        background-color: transparent !important;
         color: #262321 !important;
         -webkit-text-fill-color: #262321 !important;
+        caret-color: #7A263A !important;
+        color-scheme: light !important;
     }
 
-    [data-testid="stSelectbox"] div[data-baseweb="select"] > div > div {
-        background-color: transparent !important;
+    [data-testid="stSelectbox"] [data-baseweb="select"] input::placeholder {
+        color: #766F69 !important;
+        -webkit-text-fill-color: #766F69 !important;
+        opacity: 1 !important;
     }
 
-    [data-testid="stSelectbox"] svg {
+    [data-testid="stSelectbox"] [data-baseweb="select"] svg {
         color: #262321 !important;
         fill: #262321 !important;
     }
