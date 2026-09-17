@@ -36,7 +36,7 @@ Happy 28th birthday.
 
 Espero que disfrutes tu día especial.
 Estoy muy agradecida de conocerte y de compartir
-un nuevo cumpleaños juntos, incluos a la distancia.
+un nuevo cumpleaños juntos, incluso a la distancia.
 Te deseo mucho éxito en todas tus metas.
 Estaré a tu lado para apoyarte cuando lo necesites. 
 
