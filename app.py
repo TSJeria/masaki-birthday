@@ -670,7 +670,7 @@ def render_choose_mode():
     elif step == 5:
         st.subheader("When do you want our birthday date to start?")
         st.markdown('<p class="small-note">Toronto time.</p>', unsafe_allow_html=True)
-        start_time = st.selectbox(
+        start_time = st.radio(
             "Start time",
             [
                 "11:00 AM", "12:00 PM", "1:00 PM", "2:00 PM", "3:00 PM",
