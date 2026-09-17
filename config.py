@@ -3,10 +3,10 @@
 # =========================================================
 
 # Friday:
-#APP_MODE = "choose"
+APP_MODE = "choose"
 
 # On Saturday, change it to:
-APP_MODE = "birthday"
+#APP_MODE = "birthday"
 
 PAGE_TITLE = "Masaki-kun’s 28th Birthday"
 
