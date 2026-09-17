@@ -678,7 +678,6 @@ def render_choose_mode():
                 "Other / let’s decide together",
             ],
             index=None,
-            placeholder="Choose a time",
             label_visibility="collapsed",
         )
         st.session_state.start_time = start_time
