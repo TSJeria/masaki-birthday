@@ -342,6 +342,31 @@ st.markdown(
         border-color: #E7DED4 !important;
     }
 
+    /* =========================================
+       START TIME — CLOSED SELECTBOX
+       Keep the selected time readable after choosing it
+       ========================================= */
+    [data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+        background-color: #FFFDF9 !important;
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+        border-color: #E7DED4 !important;
+    }
+
+    [data-testid="stSelectbox"] div[data-baseweb="select"] > div * {
+        color: #262321 !important;
+        -webkit-text-fill-color: #262321 !important;
+    }
+
+    [data-testid="stSelectbox"] div[data-baseweb="select"] > div > div {
+        background-color: transparent !important;
+    }
+
+    [data-testid="stSelectbox"] svg {
+        color: #262321 !important;
+        fill: #262321 !important;
+    }
+
     </style>
     """,
     unsafe_allow_html=True,
