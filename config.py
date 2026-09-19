@@ -22,7 +22,7 @@ PHOTO_FILES = [
 # Times can be Toronto times, or you can write both Toronto / Chile.
 BIRTHDAY_PLAN = [
     {"time": "9:00 AM", "activity": "Study together"},
-    {"time": "3:00 PM", "activity": "Anime / birthday boy’s choice"},
+    {"time": "3:00 PM", "activity": "Anime - birthday boy’s choice"},
     {"time": "4:00 PM", "activity": "Buying new protein online together"},
     {"time": "7:00 PM", "activity": "Dinner together"},
     {"time": "8:00 PM", "activity": "Movie, drama or PUBG"},
